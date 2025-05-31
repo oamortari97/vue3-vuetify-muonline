@@ -1,8 +1,8 @@
 <template>
   <v-card class="mb-4 game-info-card">
-    <v-card-title class="d-flex align-center">
+    <v-card-title class="d-flex align-center card-title">
       <v-icon color="primary" class="mr-2">mdi-sword-cross</v-icon>
-      REINO ÉPICO
+      Reino
     </v-card-title>
     <v-card-text>
       <p class="text-body-2 mb-4">

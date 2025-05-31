@@ -1,8 +1,8 @@
 <template>
   <v-card class="mb-4 server-data-card">
-    <v-card-title class="d-flex align-center">
+    <v-card-title class="d-flex align-center card-title">
       <v-icon color="primary" class="mr-2">mdi-server</v-icon>
-      DADOS DO SERVIDOR
+      Dados do Servidor
     </v-card-title>
     <v-card-text>
       <v-list density="compact" bg-color="transparent">
@@ -67,7 +67,6 @@
           color="primary"
           prepend-icon="mdi-message-text"
         >
-          Edit with Lovable
         </v-btn>
       </div>
     </v-card-text>

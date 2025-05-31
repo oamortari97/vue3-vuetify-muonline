@@ -1,8 +1,8 @@
 <template>
   <v-card class="mb-4 castle-siege-card">
-    <v-card-title class="d-flex align-center">
+    <v-card-title class="d-flex align-center card-title">
       <v-icon color="orange" class="mr-2">mdi-castle</v-icon>
-      CASTLE SIEGE
+      Castle Siege
       <v-spacer></v-spacer>
       <div class="d-flex flex-column align-end">
         <span class="text-caption text-uppercase">DOM</span>

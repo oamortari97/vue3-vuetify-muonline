@@ -1,8 +1,8 @@
 <template>
   <v-card class="mb-4 server-status-card">
-    <v-card-title class="d-flex align-center">
+    <v-card-title class="d-flex align-center card-title">
       <v-icon color="success" class="mr-2">mdi-circle</v-icon>
-      SERVIDOR PRINCIPAL
+      Servidor Principal
       <v-chip color="success" size="small" class="ml-2">ONLINE</v-chip>
     </v-card-title>
     <v-card-text>
@@ -24,29 +24,12 @@
       </v-row>
       <v-row class="mt-2">
         <v-col cols="12">
-          <v-progress-linear
-            model-value="30"
-            height="10"
-            color="primary"
-            bg-color="grey-darken-3"
-            rounded
-          ></v-progress-linear>
+          <v-progress-linear model-value="30" height="10" color="primary" bg-color="grey-darken-3"
+            rounded></v-progress-linear>
           <div class="d-flex justify-space-between mt-1">
             <span class="text-caption">0</span>
             <span class="text-caption">CAPACIDADE: 500</span>
           </div>
-        </v-col>
-      </v-row>
-      <v-row class="mt-2">
-        <v-col cols="12" class="d-flex justify-end">
-          <v-btn
-            size="small"
-            variant="text"
-            color="primary"
-            prepend-icon="mdi-message-text"
-          >
-            Edit with Lovable
-          </v-btn>
         </v-col>
       </v-row>
     </v-card-text>

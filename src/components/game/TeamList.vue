@@ -1,8 +1,8 @@
 <template>
   <v-card class="mb-4 team-list-card">
-    <v-card-title class="d-flex align-center">
+    <v-card-title class="d-flex align-center card-title">
       <v-icon color="primary" class="mr-2">mdi-account-group</v-icon>
-      EQUIPE
+      Equipe
     </v-card-title>
     <v-card-text class="pa-0">
       <v-list density="compact" bg-color="transparent">

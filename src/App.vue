@@ -40,36 +40,36 @@
             <v-col cols="12" md="8">
               <!-- Servidor Principal -->
               <server-status />
-              
+
               <!-- Informações do Jogo -->
               <game-info />
-              
+
               <!-- Castle Siege -->
               <castle-siege />
-              
+
               <!-- Últimas Notícias -->
               <news-list />
             </v-col>
-            
+
             <!-- Coluna Direita -->
             <v-col cols="12" md="4">
               <!-- Dados do Servidor -->
               <server-data />
-              
+
+              <!-- Rankings -->
+              <ranking-card title="TOP 5 DIÁRIO" />
+              <ranking-card title="TOP 5 SEMANAL" />
+              <ranking-card title="TOP 5 MENSAL" />
+
               <!-- Equipe -->
               <team-list />
-              
-              <!-- Rankings -->
-              <ranking-card title="TOP 5 SEMANAL" />
-              <ranking-card title="TOP 5 DIÁRIO" />
-              <ranking-card title="TOP 5 MENSAL" />
             </v-col>
           </v-row>
         </v-container>
       </v-container>
     </v-main>
 
-    <v-footer app dark class="pa-4">
+    <v-footer dark class="pa-4">
       <v-row>
         <v-col cols="12" md="4" class="d-flex align-center">
           <v-icon icon="mdi-crown" color="primary" size="large" class="mr-2"></v-icon>
@@ -98,7 +98,8 @@
           </div>
         </v-col>
         <v-col cols="12" class="text-center mt-4">
-          <span class="text-caption">© 2024 MU ONLINE KINGDOM. TODOS OS DIREITOS RESERVADOS. FORJADO COM MAGIA E CÓDIGO</span>
+          <span class="text-caption">© 2024 MU ONLINE KINGDOM. TODOS OS DIREITOS RESERVADOS. FORJADO COM MAGIA E
+            CÓDIGO</span>
         </v-col>
       </v-row>
     </v-footer>
@@ -112,7 +113,7 @@ export default {
   name: 'App',
   setup() {
     const theme = ref('dark')
-    
+
     return {
       theme
     }
@@ -121,6 +122,10 @@ export default {
 </script>
 
 <style>
+* {
+  font-family: 'Cinzel', serif;
+}
+
 .app-header {
   background-color: #1E1E1E !important;
   border-bottom: 1px solid #D4AF37;
@@ -132,7 +137,7 @@ export default {
 }
 
 .banner-container {
-  background-image: url('/assets/images/banner-background.jpg');
+  background-image: url('@/assets/images/banner-background.png');
   background-size: cover;
   background-position: center;
   height: 300px;
@@ -173,7 +178,12 @@ export default {
 }
 
 /* Estilos globais */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: 'Cinzel', serif;
 }
 
@@ -185,5 +195,10 @@ h1, h2, h3, h4, h5, h6 {
 .v-card-title {
   border-bottom: 1px solid rgba(212, 175, 55, 0.3);
   background-color: rgba(30, 30, 30, 0.8);
+}
+
+.card-title {
+  color: #d4af37;
+  font-size: 1rem;
 }
 </style>

@@ -1,8 +1,8 @@
 <template>
   <v-card class="mb-4 news-list-card">
-    <v-card-title class="d-flex align-center">
+    <v-card-title class="d-flex align-center card-title">
       <v-icon color="error" class="mr-2">mdi-newspaper-variant</v-icon>
-      ÚLTIMAS NOTÍCIAS
+      Últimas Notícias
     </v-card-title>
     <v-card-text class="pa-0">
       <v-list density="compact" bg-color="transparent">
